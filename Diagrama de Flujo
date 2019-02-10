@@ -1,0 +1,99 @@
+//* Este es un pseudocodigo.
+#include
+using namespace std;
+
+int cereal;
+int musica;
+int libro;
+int rating = 0;
+int respuesta;
+bool mamá = false;
+bool conspiracion = false;
+
+int main {
+    cout << "Elige un cereal (1)Frosties (2)Sugar Puffs";
+    cin >> cereal;
+    cout << "Elige un casette de musica (1)Now 2 (2)Thompson Twins";
+    cin >> musica
+    cout << "Te ofrecen trabajar con Tuckersoft, ¿(1)Aceptas o (2)Rechazas?";
+    cin >> respuesta;
+    if (respuesta == 1){
+        rating = 0;
+        cout << "Se ha publicado el juego con una publicacion de: " << rating << endl;
+    } else if (respuesta == 2) {
+        cout << "Rechazaste esta oferta, tiempo depsues vas con tu cotcora y te"<<endl;
+        cout << "pregunta si quieres hablar de tu madre, (1)Aceptas (2)Rechazas"<<endl;
+        cin >> respuesta;
+        if (respuesta == 2){
+            cout << "La doctora te inciste nuevamente, ¿(1)Aceptas o (2)No?" << endl;
+            cin >> respuesta;
+        }
+        if (respuesta == 1)
+            mamá = true;
+        cout << "Elige un libro (1)Phaedra (2)Triangulo de las Bermudas"<<endl;
+        cin >> libro;
+        cout << "Tu papá te presiona para que no te la pases en tu ordenador"<<endl;
+        cout << "trabajando en tu proyecto. ¿Qué harías?" <<endl;
+        cout << "(1)Tirar te sobre tu computadora, (2) Gritarle a papá." <<endl;
+        cin >> respuesta;
+        if (respuesta == 1){
+            cout << "Tu ordenador quedo inservible, no hay proyecto publicado"<<endl;
+        } else if (respuesta == 2){
+            cout << "Despues de gritarle te invita a comer xd; Era una trampa,"<<endl;
+            cout << "quiere que hables con la doctora, te encuentras a Colin"<< endl;
+            cout << "(1)Seguir a Colin o (2) Hablar con la Doctora?"<<endl;
+            cin >> respuesta;
+            if (respuesta == 1){
+                cout << "Colin te invita a drogarte, (1)Aceptar (2)Rechazar"<<endl;
+                cin >> respuesta;
+                conspiracion = true;
+                cout<<"Te cuenta que esto es solo parte de un programa donde"<<endl:
+                cout<<"no tienes control y alguien toma desiciones, para"<<endl;
+                cout<<"demostrarlo te invita a saltar de la terraza,"<<endl;
+                cout<<"¿saltaras? (1)Si (2)No"<<endl;
+                cin >> respuesta;
+                if (respuesta == 1) {
+                    cout<<"Saltaste y moriste, el juego se publica, pero no"<<endl;
+                    cout<<"obtuvo un puntuaje, juego criticado como terrible"<<endl;
+                } else if (respuesta == 2) {
+                    cout<<"despiertas de un sueño, tu padre espera a que"<< endl;
+                    cout<<"entres a hablar con la doctora"<< endl;
+                }
+            }
+            cout << "Hablando con ella tu protagonista se siente controlado"<<endl;
+            cout << "por un ente, (1)Morderte las uñas (2)Jalarte una oreja"<<endl;
+            cin >> respuesta;
+            cout << "La doctora te receta unas pastillas muy ricas yummi"<<endl;
+            if (conspiracion == false){
+                cout<<"Te tomaras el medicamento?(1)Si (2)No"<endl;
+                cin >>respuesta;
+                if (respuesta==1){
+                    rating = 0;
+                    cout<<"El juego se publica con calif: "<<rating<<endl;
+                } else if (respuesta == 2) {
+                    conspiracion=true;
+                }
+            }
+            if (conspiracion == true){
+                cout<<"No te tomaste los medicamentos, tu proyecto tiene algunos"<<endl;
+                cout<<"fallos y te enojas, ¿vas a (1)golpear el escritorio o"<<endl;
+                cout<<"(2)destruir tu computadora?"<endl;
+                cin >> respuesta;
+                if (respuesta==2){
+                    cout<<"Tu ordenador no sirve, no hay proyecto publicado"<<endl;
+                }
+                if (respuesta==1{
+                    cout<<"No puedes dormir,(1)Tomar libro (2)Tomar foto"<<endl;
+                    cin >> respuesta;
+                    if (respuesta ==1){
+                    
+                    } else if (respuesta ==2){
+                    
+                    }
+                }
+            }
+        }
+    }
+    cout << "Fin del juego";
+    return 0;
+}
