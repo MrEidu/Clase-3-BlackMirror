@@ -9,6 +9,8 @@ int rating = 0;
 int respuesta;
 bool mamá = false;
 bool conspiracion = false;
+bool colin = false;
+bool verdad = false;
 
 int main {
     cout << "Elige un cereal (1)Frosties (2)Sugar Puffs";
@@ -86,10 +88,25 @@ int main {
                     cout<<"No puedes dormir,(1)Tomar libro (2)Tomar foto"<<endl;
                     cin >> respuesta;
                     if (respuesta ==1){
-                    
+                        cout<<"Ingresar el codigo: ";
+                        if (mamá==true){
+                            if (colin==true){
+                                cout << "(1)PAC (2)TOY"<<endl;
+                                cin >> respuesta;
+                                if (respuesta==1)
+                                    verdad = true;
+                            } else {
+                                cout << "(1)PAX (2)TOY"<<endl;
+                                cin >> respuesta;
+                            }
+                            if (respuesta ==2){
+                            456789876543212345678
+                            }
+                        }
                     } else if (respuesta ==2){
                     
                     }
+                    //***if (
                 }
             }
         }
