@@ -30,8 +30,10 @@ int main {
             cout << "La doctora te inciste nuevamente, ¿(1)Aceptas o (2)No?" << endl;
             cin >> respuesta;
         }
-        if (respuesta == 1)
+        if (respuesta == 1) {
             mamá = true;
+            cout << "Recuerdas tu pasado, ¿irías con tu mamá? (1)NO"<<endl;    
+        }
         cout << "Elige un libro (1)Phaedra (2)Triangulo de las Bermudas"<<endl;
         cin >> libro;
         cout << "Tu papá te presiona para que no te la pases en tu ordenador"<<endl;
@@ -60,6 +62,7 @@ int main {
                 } else if (respuesta == 2) {
                     cout<<"despiertas de un sueño, tu padre espera a que"<< endl;
                     cout<<"entres a hablar con la doctora"<< endl;
+                    colin=true;
                 }
             }
             cout << "Hablando con ella tu protagonista se siente controlado"<<endl;
@@ -93,20 +96,26 @@ int main {
                             if (colin==true){
                                 cout << "(1)PAC (2)TOY"<<endl;
                                 cin >> respuesta;
-                                if (respuesta==1)
+                                if (respuesta==1) {
                                     verdad = true;
+                                    cout<<"Te han observado toda tu vida"<<endl;
+                                }
                             } else {
                                 cout << "(1)PAX (2)TOY"<<endl;
                                 cin >> respuesta;
                             }
                             if (respuesta ==2){
-                            456789876543212345678
+                                cout<<"Vuelves a recordar a tu madre, ¿desearias"<<endl;
+                                cout<<"ir con ella? (1)Si(2)No"<<endl;
+                                if (respuesta ==1){
+                                    cout<<"Moriste en aquel accidente"<<endl;
+                                }
                             }
                         }
-                    } else if (respuesta ==2){
-                    
                     }
-                    //***if (
+                    cout << "Estas enloqueciendo y procesando lo que piensas"<<endl;
+                    cout << "(1)Tirar te sobre pc (2)Destruir computadora"<<endl;
+                    cin >> respuesta;
                 }
             }
         }
